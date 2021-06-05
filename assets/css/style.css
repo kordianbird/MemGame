@@ -1,4 +1,19 @@
 .head {
     text-align: center;
-    color: aqua;
+    font-size: 40px;
+}
+
+.head img {
+    width: 500px;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: flex;
 }
