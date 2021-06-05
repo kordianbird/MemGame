@@ -1,8 +1,7 @@
-var playBtn = document.getElementById("game");
-
-var hide = document.getElementsByClassName("hide");
 
 function startGame() {
+    var hide = document.getElementsByClassName("hide");
+
     if (hide) {
         for ( var x = 0; x < hide.length; x++) {
             hide[x].style.visibility = "hidden";
@@ -10,4 +9,4 @@ function startGame() {
     }
 }
 
-playBtn.addEventListener('click', startGame);
+document.getElementById("game").addEventListener('click', startGame);
