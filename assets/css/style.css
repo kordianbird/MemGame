@@ -12,6 +12,7 @@ button {
     height: 100px;
     margin-left: auto;
     margin-right: auto;
+    background-color: none;
 }
 
 .center {
