@@ -57,3 +57,10 @@ button {
 [class*="col-"] {
   float: left;
 }
+
+@media screen and (max-width: 2315px) {
+  .card {
+    width:350px;
+    height:200px;
+  }
+}
