@@ -17,6 +17,13 @@ button {
     height: 100px;
     margin:auto;
     display:block;
+    border: none;
+    background-color: white;
+    font-size: 70px;
+}
+
+button:hover {
+    background-color: #E5E5E5;
 }
 
 .center {
