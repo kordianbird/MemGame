@@ -22,4 +22,9 @@ function nextStep() {
   return random;
 }
 
+function nextRound() {
 
+    const nextSequence = [];
+    nextSequence.push(nextStep());
+    playRound(nextSequence);
+}
