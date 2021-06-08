@@ -55,3 +55,7 @@ button:hover {
     height:200px;
   }
 }
+
+.lit {
+    background-color: green;
+}
