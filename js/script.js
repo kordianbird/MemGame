@@ -28,3 +28,21 @@ function nextRound() {
     nextSequence.push(nextStep());
     playRound(nextSequence);
 }
+
+function activeTile(color) {
+    const tile = document.querySelector(`[data-tile='${color}']`);
+
+    tile.classList.add("lit");
+
+    setTimeout(() => {
+        tile.classList.remove("lit");
+    }, 300);
+}
+
+function playRound(nextSequence) {
+    nextSequence.forEach((color, index) => {
+        setTimeout(() => {
+            activeTile(color);
+        }, (index + 1) * 600);
+    });
+}
