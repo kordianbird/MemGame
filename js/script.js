@@ -14,3 +14,12 @@ function unhide() {
         T[i].style.display = 'block';
     }
 }
+
+function nextStep() {
+  const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange'];
+  const random = tiles[Math.floor(Math.random() * tiles.length)];
+
+  return random;
+}
+
+
