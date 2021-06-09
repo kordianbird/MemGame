@@ -1,5 +1,5 @@
 const sequence = [];
-let humanSequence = [];
+let playerSequence = [];
 const level = 0;
 const tileContainer = document.querySelector('.container');
 
@@ -45,4 +45,12 @@ function playRound(nextSequence) {
             activeTile(color);
         }, (index + 1) * 600);
     });
+}
+
+function playerTurn(tile) {
+    const index = playerSequence.push(tile) - 1;
+
+    if (playerSequence.length = sequence.length) {
+        alert("damn... looks like you lost")
+    }
 }
