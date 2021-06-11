@@ -61,6 +61,14 @@ function activateTile(color) {
   }, 300);
 }
 
+function playRound(nextSequence) {
+  nextSequence.forEach((color, index) => {
+    setTimeout(() => {
+      activateTile(color);
+    }, (index + 1) * 600);
+  });
+}
+
 function playerTurn(tile) {
   const index = playerSequence.push(tile) - 1;
   /*const sound = document.querySelector(`[data-sound='${tile}']`);*/
