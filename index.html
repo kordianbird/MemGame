@@ -8,15 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div class="head hide">
-        <h1>MEM TILES!</h1>
+    
+    <header class="head hide">
+        <h1 class="heading">MEM TILES!</h1>
         <img src="assets/images/memgamelogo.png" alt="">
-    </div>
-    <div class="center hide">
-        <button id="game" onclick="unhide(); startGame()">Play</button>
-    </div> 
+    </header>
 
-    <div class="container jscon unhide" style="display:none">
+    <section class="tile-container unclick hidden" >
         <div class="tile tile-red card" data-tile="red"></div>
         <div class="tile tile-green card" data-tile="green"></div>
         <div class="tile tile-blue card" data-tile="blue"></div>
@@ -26,13 +24,13 @@
         <div class="tile tile-grey card" data-tile="grey"></div>
         <div class="tile tile-aqua card" data-tile="aqua"></div>
         <div class="tile tile-orange card" data-tile="orange"></div>
-    </div>
+    </section>
 
-    <div id="gamescore" class="unhide" style="display:none">
-        <h2 class="score">Score:</h2>
-        <h2 class="score">Level:</h2>
-    </div>
-    <span></span>
+    <footer class="info-section">
+      <button class="startBtn">Start</button>
+      <span class="info hidden"></span>
+    </footer>
+
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

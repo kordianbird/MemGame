@@ -39,7 +39,7 @@ button:hover {
     border: black 2px solid;
     display: inline-block;
 }
-.container {
+.tile-container {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 5%;
@@ -58,4 +58,20 @@ button:hover {
 
 .lit {
     background-color: green;
+}
+
+.unclick {
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.info {
+    font-size: 30px;
 }

@@ -1,19 +1,12 @@
-const sequence = [];
-const playerSequence = [];
-const level = 0;
-const tileContainer = document.querySelector('.container');
+let sequence = [];
+let playerSequence = [];
+let level = 0;
 
-function startGame() {
-  $(".hide").hide();
-  nextRound();
-}
-
-function unhide() {
-    var T = $(".unhide");
-    for (var i = 0; i < T.length; i++) {
-        T[i].style.display = 'block';
-    }
-}
+const head = document.querySelector('.head');
+const startButton = document.querySelector('.startBtn');
+const info = document.querySelector('.info');
+const heading = document.querySelector('.heading');
+const tileContainer = document.querySelector('.tile-container');
 
 function nextStep() {
   const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange'];
@@ -23,47 +16,68 @@ function nextStep() {
 }
 
 function nextRound() {
+  level += 1;
 
-    const nextSequence = [];
-    nextSequence.push(nextStep());
-    playRound(nextSequence);
+  tileContainer.classList.add('unclick');
+  /* level info */
+
+
+  const nextSequence = [...sequence];
+  nextSequence.push(nextStep());
+  playRound(nextSequence);
+
+  sequence = [...nextSequence];
+  setTimeout(() => {
+    humanTurn(level);
+  }, level * 600 + 1000);
 }
 
-function activeTile(color) {
-    const tile = document.querySelector(`[data-tile='${color}']`);
+function PLayerTurn(tile) {
+  const index = playerSequence.push(tile) - 1;
+  /*const sound = document.querySelector(`[data-sound='${tile}']`);*/
+  /*sound.play();*/
 
-    tile.classList.add("lit");
+  const remainingTaps = sequence.length - playerSequence.length;
 
+  if (playerSequence[index] !== sequence[index]) {
+    resetGame('Oops! Game over, you pressed the wrong tile');
+    return;
+  }
+
+  if (playerSequence.length === sequence.length) {
+    if (playerSequence.length === 20) {
+      resetGame('Congrats! You completed all the levels');
+      return
+    }
+
+    playerSequence = [];
+    info.textContent = 'Great Job!';
     setTimeout(() => {
-        tile.classList.remove("lit");
-    }, 300);
+      nextRound();
+    }, 1000);
+    return;
+  }
+
+  info.textContent = `Your turn: ${remainingTaps} Tap${
+    remainingTaps > 1 ? 's' : ''
+  }`;
 }
 
-function playerTurn(tile) {
-    const index = playerSequence.push(tile) - 1;
 
-    if (playerSequence[index] !== sequence[index]) {
-        alert("damn... looks like you lost");
-    }
 
-    if (playerSequence.length === sequence.length) {
-        if (playerSequence.length === 10) {
-            alert("damn you're good!");
-        }
-        playerSequence = [];
-    }
+function startGame() {
+  head.classList.add('hidden');
+  startButton.classList.add('hidden');
+  info.classList.remove('hidden');
+  tileContainer.classList.remove('hidden');
+  nextRound();
 }
 
-function playRound(nextSequence) {
-    nextSequence.forEach((color, index) => {
-        setTimeout(() => {
-            activeTile(color);
-        }, (index + 1) * 600);
-    });
-}
-
+startButton.addEventListener('click', startGame);
 tileContainer.addEventListener('click', event => {
   const { tile } = event.target.dataset;
 
-  if (tile) playerTurn(tile);
+  if (tile) PLayerTurn(tile);
 });
+
+
