@@ -8,6 +8,18 @@ const info = document.querySelector('.info');
 const heading = document.querySelector('.heading');
 const tileContainer = document.querySelector('.tile-container');
 
+function resetGame(text) {
+  alert(text);
+  sequence = [];
+  playerSequence = [];
+  level = 0;
+  startButton.classList.remove('hidden');
+  info.classList.add('hidden');
+  tileContainer.classList.add('unclick');
+  head.classList.remove('hidden');
+  tileContainer.classList.add('hidden');
+}
+
 function nextStep() {
   const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange'];
   const random = tiles[Math.floor(Math.random() * tiles.length)];
