@@ -44,6 +44,11 @@ function nextRound() {
   }, level * 600 + 1000);
 }
 
+function humanTurn(level) {
+  tileContainer.classList.remove('unclick');
+  info.textContent = `Taps: ${level} `;
+}
+
 function PLayerTurn(tile) {
   const index = playerSequence.push(tile) - 1;
   /*const sound = document.querySelector(`[data-sound='${tile}']`);*/
