@@ -49,7 +49,19 @@ function humanTurn(level) {
   info.textContent = `Taps: ${level} `;
 }
 
-function PLayerTurn(tile) {
+function activateTile(color) {
+  const tile = document.querySelector(`[data-tile='${color}']`);
+  /*const sound = document.querySelector(`[data-sound='${color}']`);*/
+
+  tile.classList.add('lit');
+ /* sound.play();*/
+
+  setTimeout(() => {
+    tile.classList.remove('lit');
+  }, 300);
+}
+
+function playerTurn(tile) {
   const index = playerSequence.push(tile) - 1;
   /*const sound = document.querySelector(`[data-sound='${tile}']`);*/
   /*sound.play();*/
@@ -94,7 +106,7 @@ startButton.addEventListener('click', startGame);
 tileContainer.addEventListener('click', event => {
   const { tile } = event.target.dataset;
 
-  if (tile) PLayerTurn(tile);
+  if (tile) playerTurn(tile);
 });
 
 
