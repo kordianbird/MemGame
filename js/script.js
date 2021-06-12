@@ -7,6 +7,7 @@ const startButton = document.querySelector('.startBtn');
 const info = document.querySelector('.info');
 const heading = document.querySelector('.heading');
 const tileContainer = document.querySelector('.tile-container');
+const levelSpan = document.querySelector('.level');
 
 function resetGame(text) {
   alert(text);
@@ -18,6 +19,7 @@ function resetGame(text) {
   tileContainer.classList.add('unclick');
   head.classList.remove('hidden');
   tileContainer.classList.add('hidden');
+  levelSpan.classList.add('hidden');
 }
 
 function nextStep() {
@@ -31,7 +33,7 @@ function nextRound() {
   level += 1;
 
   tileContainer.classList.add('unclick');
-  /* level info */
+  levelSpan.textContent = `Level ${level} of 10`;
 
 
   const nextSequence = [...sequence];
@@ -82,7 +84,7 @@ function playerTurn(tile) {
   }
 
   if (playerSequence.length === sequence.length) {
-    if (playerSequence.length === 20) {
+    if (playerSequence.length === 10) {
       resetGame('Congrats! You completed all the levels');
       return
     }
@@ -94,10 +96,6 @@ function playerTurn(tile) {
     }, 1000);
     return;
   }
-
-  info.textContent = `Your turn: ${remainingTaps} Tap${
-    remainingTaps > 1 ? 's' : ''
-  }`;
 }
 
 
@@ -107,6 +105,7 @@ function startGame() {
   startButton.classList.add('hidden');
   info.classList.remove('hidden');
   tileContainer.classList.remove('hidden');
+  levelSpan.classList.remove('hidden');
   nextRound();
 }
 
