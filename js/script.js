@@ -51,10 +51,10 @@ function humanTurn(level) {
 
 function activateTile(color) {
   const tile = document.querySelector(`[data-tile='${color}']`);
-  /*const sound = document.querySelector(`[data-sound='${color}']`);*/
+  const sound = document.querySelector(`[data-sound='${color}']`);
 
   tile.classList.add('lit');
- /* sound.play();*/
+  sound.play();
 
   setTimeout(() => {
     tile.classList.remove('lit');
@@ -71,8 +71,8 @@ function playRound(nextSequence) {
 
 function playerTurn(tile) {
   const index = playerSequence.push(tile) - 1;
-  /*const sound = document.querySelector(`[data-sound='${tile}']`);*/
-  /*sound.play();*/
+  const sound = document.querySelector(`[data-sound='${tile}']`);
+  sound.play();
 
   const remainingTaps = sequence.length - playerSequence.length;
 
