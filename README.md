@@ -14,3 +14,13 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 ## Existing Features
 
 ## Next Features
+
+
+
+# Technologies Used
+
+## Languages
+
+## Libraries
+
+## Programs
