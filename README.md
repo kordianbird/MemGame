@@ -28,7 +28,7 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## Next Features
 
-
+- [] __restart button__ - lets the user restart the game
 
 # Technologies Used
 
