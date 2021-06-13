@@ -24,3 +24,17 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 ## Libraries
 
 ## Programs
+
+
+
+# Testing
+
+
+
+# Deployment
+
+## Github Pages
+
+## Forking Github Repository
+
+## Local Clone
