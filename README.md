@@ -38,3 +38,13 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 ## Forking Github Repository
 
 ## Local Clone
+
+
+
+# Credits
+
+## Code
+
+## Content
+
+## Media
