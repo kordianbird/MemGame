@@ -15,15 +15,15 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## Existing Features
 
-*_Main-Menu_ - let's the user to see their highscore and start the game
+* __Main-Menu__ - let's the user to see their highscore and start the game
 
-*_Sequence_ - creates a random sequence for the game so that it doesn't get repetitive
+* __Sequence__ - creates a random sequence for the game so that it doesn't get repetitive
 
-*_score_ - a score system so that the user is aware of their performance and to compare with other users
+* __score__ - a score system so that the user is aware of their performance and to compare with other users
 
-*_audio_ - audio cues to brighten up the game experience
+* __audio__ - audio cues to brighten up the game experience
 
-*_colored-tiles_ - tiles will flash in a bright color to indicate the sequence
+* __colored-tiles__ - tiles will flash in a bright color to indicate the sequence
 
 
 ## Next Features
@@ -33,6 +33,13 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 # Technologies Used
 
 ## Languages
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML)
+- I used html (HyperText Markup Language) as the base for my project
+
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+- I used css3 to style my game 
+
 
 ## Libraries
 
