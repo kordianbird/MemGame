@@ -7,3 +7,10 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 ## User Stories
 
 ## Design
+
+
+# Features
+
+## Existing Features
+
+## Next Features
