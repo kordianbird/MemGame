@@ -93,3 +93,7 @@ These are steps you can use to fork the repository:
 ## Content
 
 ## Media
+
+* the Logo image that's used in the main menu was created in [Microsoft Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
+
+* audio used for the tiles was taken from [zapsplat](https://www.zapsplat.com/page/4/?s=tile&post_type=music&sound-effect-category-id)
