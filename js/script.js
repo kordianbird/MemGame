@@ -8,6 +8,7 @@ const info = document.querySelector('.info');
 const heading = document.querySelector('.heading');
 const tileContainer = document.querySelector('.tile-container');
 const levelSpan = document.querySelector('.level');
+const tile = document.getElementsByClassName("tile");
 
 function resetGame(text) {
   alert(text);
@@ -98,8 +99,6 @@ function playerTurn(tile) {
   }
 }
 
-
-
 function startGame() {
   head.classList.add('hidden');
   startButton.classList.add('hidden');
@@ -116,4 +115,16 @@ tileContainer.addEventListener('click', event => {
   if (tile) playerTurn(tile);
 });
 
+
+function boxShadow() {
+    this.classList.add('shadow');
+
+    setTimeout(() => {
+        this.classList.remove('shadow');
+    }, 300);
+}
+
+for (var i = 0; i < tile.length; i++) {
+    tile[i].addEventListener('click', boxShadow, false);
+}
 

@@ -81,3 +81,8 @@ footer {
     margin-top: 30px;
     font-size: 20px;
 }
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+}
