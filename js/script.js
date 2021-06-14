@@ -49,7 +49,7 @@ function nextRound() {
 
 function humanTurn(level) {
   tileContainer.classList.remove('unclick');
-  info.textContent = `Taps: ${level} `;
+  info.textContent = `Taps: ${level}`;
 }
 
 function activateTile(color) {
@@ -97,6 +97,7 @@ function playerTurn(tile) {
     }, 1000);
     return;
   }
+    info.textContent = `Taps: ${remainingTaps}`;
 }
 
 function startGame() {
