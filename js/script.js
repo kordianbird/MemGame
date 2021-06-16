@@ -132,4 +132,7 @@ for (var i = 0; i < tile.length; i++) {
 function nextStage(text) {
     alert(text);
     $(".nxt").removeClass("hidden");
+
+    newArray = ["brown","moss","violet","gold","aluminium","rose","navy"];
+    newArray.push(nextStep());
 }
