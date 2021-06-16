@@ -24,7 +24,7 @@ function resetGame(text) {
 }
 
 function nextStep() {
-  const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange'];
+  const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange'/*,'brown','moss','violet','gold','aluminium','rose','navy'*/];
   const random = tiles[Math.floor(Math.random() * tiles.length)];
 
   return random;
@@ -86,8 +86,9 @@ function playerTurn(tile) {
 
   if (playerSequence.length === sequence.length) {
     if (playerSequence.length === 2) {
+        playerSequence = [];
       nextStage('Congrats! You completed all the levels, Time for the next stage!');
-      return
+      return;
     }
 
     playerSequence = [];
@@ -133,6 +134,7 @@ function nextStage(text) {
     alert(text);
     $(".nxt").removeClass("hidden");
 
-    newArray = ["brown","moss","violet","gold","aluminium","rose","navy"];
+    newArray = ['brown','moss','violet','gold','aluminium','rose','navy'];
     newArray.push(nextStep());
+    nextRound();
 }
