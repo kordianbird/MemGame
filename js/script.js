@@ -80,13 +80,13 @@ function playerTurn(tile) {
   const remainingTaps = sequence.length - playerSequence.length;
 
   if (playerSequence[index] !== sequence[index]) {
-    resetGame('Oops! Game over, you pressed the wrong tile');
+    resetGame('Game Over!');
     return;
   }
 
   if (playerSequence.length === sequence.length) {
-    if (playerSequence.length === 10) {
-      resetGame('Congrats! You completed all the levels');
+    if (playerSequence.length === 2) {
+      nextStage('Congrats! You completed all the levels, Time for the next stage!');
       return
     }
 
@@ -129,3 +129,7 @@ for (var i = 0; i < tile.length; i++) {
     tile[i].addEventListener('click', boxShadow, false);
 }
 
+function nextStage(text) {
+    alert(text);
+    $(".nxt").removeClass("hidden");
+}
