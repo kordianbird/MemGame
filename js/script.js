@@ -21,9 +21,11 @@ function resetGame(text) {
   head.classList.remove('hidden');
   tileContainer.classList.add('hidden');
   levelSpan.classList.add('hidden');
+  $(".nxt").addClass("hidden");
+  tiles.splice(9, 7);
 }
 
-const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange',/*'brown','moss','violet','gold','aluminium','rose','navy'*/];
+const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange',];
 
 function nextStep() {
   const random = tiles[Math.floor(Math.random() * tiles.length)];
@@ -137,5 +139,4 @@ function nextStage(text) {
 
     tiles.push('brown','moss','violet','gold','aluminium','rose','navy');
     nextRound();
-    console.log(nextStep());
 }
