@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background-image: url(/assets/images/white-floorboards.png);
+}
+
 .head {
     text-align: center;
     font-size: 40px;
@@ -151,4 +156,9 @@ footer {
 .tile-navy{
     background-color: navy;
     opacity: 0.5;
+}
+
+.wall {
+    object-fit: fill;
+    height: 100%;
 }

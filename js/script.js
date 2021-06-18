@@ -123,9 +123,13 @@ tileContainer.addEventListener('click', event => {
 
 function boxShadow() {
     this.classList.add('shadow');
+    this.classList.add('lit');
 
     setTimeout(() => {
         this.classList.remove('shadow');
+    }, 300);
+    setTimeout(() => {
+        this.classList.remove('lit');
     }, 300);
 }
 
