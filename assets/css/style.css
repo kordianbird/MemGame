@@ -57,7 +57,7 @@ button:hover {
 }
 
 .lit {
-    background-color: green;
+    opacity: 1 !important;
 }
 
 .unclick {
@@ -85,4 +85,70 @@ footer {
 .shadow {
     -webkit-box-shadow: 5px 5px 5px black;
     box-shadow: 5px 5px 5px black;
+}
+
+.tile-red {
+    background-color: red;
+    opacity: 0.5;
+}
+.tile-green {
+    background-color: green;
+    opacity: 0.5;
+}
+.tile-blue {
+    background-color: blue;
+    opacity: 0.5;
+}
+.tile-yellow {
+    background-color: yellow;
+    opacity: 0.5;
+}
+.tile-pink {
+    background-color: pink;
+    opacity: 0.5;
+}
+.tile-purple {
+    background-color: purple;
+    opacity: 0.5;
+}
+.tile-gray {
+    background-color: gray;
+    opacity: 0.5;
+}
+.tile-aqua {
+    background-color: aqua;
+    opacity: 0.5;
+}
+.tile-orange {
+    background-color: orange;
+    opacity: 0.5;
+}
+
+.tile-brown {
+    background-color: brown;
+    opacity: 0.5;
+}
+.tile-moss {
+    background-color: darkolivegreen;
+    opacity: 0.5;
+}
+.tile-violet {
+    background-color: violet;
+    opacity: 0.5;
+}
+.tile-gold {
+    background-color: gold;
+    opacity: 0.5;
+}
+.tile-silver{
+    background-color: silver;
+    opacity: 0.5;
+}
+.tile-rose{
+    background-color: salmon;
+    opacity: 0.5;
+}
+.tile-navy{
+    background-color: navy;
+    opacity: 0.5;
 }
