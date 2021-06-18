@@ -23,7 +23,7 @@ button {
     margin:auto;
     display:block;
     border: none;
-    background-color: white;
+    background-color: transparent;
     font-size: 70px;
 }
 
