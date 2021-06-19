@@ -1,6 +1,7 @@
 let sequence = [];
 let playerSequence = [];
 let level = 0;
+let score = 0;
 
 const head = document.querySelector('.head');
 const startButton = document.querySelector('.startBtn');
