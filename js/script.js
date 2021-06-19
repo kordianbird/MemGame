@@ -10,6 +10,7 @@ const heading = document.querySelector('.heading');
 const tileContainer = document.querySelector('.tile-container');
 const levelSpan = document.querySelector('.level');
 const tile = document.getElementsByClassName("tile");
+const scoreSpan = document.querySelector('.score');
 
 function resetGame(text) {
   alert(text);
@@ -36,9 +37,11 @@ function nextStep() {
 
 function nextRound() {
   level += 1;
+  score += 10;
 
   tileContainer.classList.add('unclick');
   levelSpan.textContent = `Level ${level} of 10`;
+  scoreSpan.textContent = `Score: ${score}`;
 
 
   const nextSequence = [...sequence];
@@ -111,6 +114,7 @@ function startGame() {
   info.classList.remove('hidden');
   tileContainer.classList.remove('hidden');
   levelSpan.classList.remove('hidden');
+  scoreSpan.classList.remove('hidden');
   nextRound();
 }
 
