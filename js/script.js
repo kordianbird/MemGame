@@ -17,12 +17,14 @@ function resetGame(text) {
   sequence = [];
   playerSequence = [];
   level = 0;
+  score = 0;
   startButton.classList.remove('hidden');
   info.classList.add('hidden');
   tileContainer.classList.add('unclick');
   head.classList.remove('hidden');
   tileContainer.classList.add('hidden');
   levelSpan.classList.add('hidden');
+  scoreSpan.classList.add('hidden');
   $(".nxt").addClass("hidden");
   tiles.splice(9, 7);
 }
@@ -37,7 +39,6 @@ function nextStep() {
 
 function nextRound() {
   level += 1;
-  score += 10;
 
   tileContainer.classList.add('unclick');
   levelSpan.textContent = `Level ${level} of 10`;
@@ -100,6 +101,7 @@ function playerTurn(tile) {
 
     playerSequence = [];
     info.textContent = 'Great Job!';
+    score += 10;
     setTimeout(() => {
       nextRound();
     }, 1000);
