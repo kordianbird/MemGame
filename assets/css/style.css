@@ -59,12 +59,37 @@ button:hover {
     text-align: center;
 }
 
-/*@media screen and (max-width: 2315px) {
+@media screen and (max-width: 2315px) and (min-width: 1920px) {
   .card {
     width:350px;
     height:200px;
   }
-}*/
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+    .card {
+        width: 250px;
+        height: 150px;
+        margin: 10px 10px 10px 10px;
+    }
+    .tile-container {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        width: 300px;
+        height: 150px;
+        margin: 10px 10px 10px 10px;
+    }
+    .tile-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
 
 .lit {
     opacity: 1 !important;
