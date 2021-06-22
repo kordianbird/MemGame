@@ -95,6 +95,7 @@ function playerTurn(tile) {
   if (playerSequence.length === sequence.length) {
     if (playerSequence.length === 2) {
         playerSequence = [];
+        score += 10;
       nextStage('Congrats! You completed all the levels, Time for the next stage!');
       return;
     }
