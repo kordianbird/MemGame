@@ -55,6 +55,12 @@ button:hover {
     margin-top: 5%;
 }
 
+.no-margin {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+
 .score {
     text-align: center;
 }
@@ -73,9 +79,9 @@ button:hover {
         margin: 10px 10px 10px 10px;
     }
     .tile-container {
-        margin-left: 15%;
-        margin-right: 15%;
-        margin-top: 10%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
     }
 }
 
@@ -86,8 +92,8 @@ button:hover {
         margin: 10px 10px 10px 10px;
     }
     .tile-container {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 

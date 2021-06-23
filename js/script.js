@@ -107,7 +107,7 @@ function playerTurn(tile) {
       nextRound();
     }, 1000);
     return;
-  }
+  } 
     info.textContent = `Taps: ${remainingTaps}`;
 }
 
@@ -148,6 +148,8 @@ for (var i = 0; i < tile.length; i++) {
 function nextStage(text) {
     alert(text);
     $(".nxt").removeClass("hidden");
+
+    tileContainer.classList.add('no-margin');
 
     tiles.push('brown','moss','violet','gold','aluminium','rose','navy');
     nextRound();
