@@ -41,7 +41,7 @@ function nextRound() {
   level += 1;
 
   tileContainer.classList.add('unclick');
-  levelSpan.textContent = `Level ${level} of 10`;
+  levelSpan.textContent = `Level: ${level}`;
   scoreSpan.textContent = `Score: ${score}`;
 
 
