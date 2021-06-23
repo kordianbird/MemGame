@@ -110,6 +110,18 @@ button:hover {
         height: 100px;
         margin: 5px 5px 5px 5px;
     }
+    .head img {
+        width: 200px;
+    }
+    .head {
+        font-size: 20px;
+    }
+    .startBtn {
+        font-size: 40px;
+    }
+    footer {
+        margin-top: 10px;
+    }
 }
 
 
