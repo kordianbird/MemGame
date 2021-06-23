@@ -83,6 +83,9 @@ button:hover {
         margin-right: 0%;
         margin-top: 0%;
     }
+    .head img {
+        width: 400px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -96,6 +99,26 @@ button:hover {
         margin-right: 0%;
     }
 }
+
+@media screen and (max-width: 414px) {
+    .tile-container {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .card {
+        width: 150px;
+        height: 100px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+
+
+
+
+
+
+
 
 .lit {
     opacity: 1 !important;
