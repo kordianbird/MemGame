@@ -12,6 +12,8 @@ const levelSpan = document.querySelector('.level');
 const tile = document.getElementsByClassName("tile");
 const scoreSpan = document.querySelector('.score');
 
+
+/* resetGame(text) resets all sequences, score, level and arrays and hides divs*/ 
 function resetGame(text) {
   alert(text);
   sequence = [];
@@ -31,12 +33,15 @@ function resetGame(text) {
 
 const tiles = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'grey', 'aqua', 'orange',];
 
+
+/* nextStep() returns random tile*/ 
 function nextStep() {
   const random = tiles[Math.floor(Math.random() * tiles.length)];
 
   return random;
 }
 
+/* nextRound() increments level by 1, adds content and starts a sequence */
 function nextRound() {
   level += 1;
 
@@ -55,11 +60,13 @@ function nextRound() {
   }, level * 600 + 1000);
 }
 
+/* humanTurn(level) let's player tap the tiles */
 function humanTurn(level) {
   tileContainer.classList.remove('unclick');
   info.textContent = `Taps: ${level}`;
 }
 
+/* activateTile(color) lights up tiles and plays sound */
 function activateTile(color) {
   const tile = document.querySelector(`[data-tile='${color}']`);
   const sound = document.querySelector(`[data-sound='${color}']`);
@@ -71,7 +78,7 @@ function activateTile(color) {
     tile.classList.remove('lit');
   }, 300);
 }
-
+ /* playRound(nextSequence) plays the next sequence */
 function playRound(nextSequence) {
   nextSequence.forEach((color, index) => {
     setTimeout(() => {
@@ -79,7 +86,7 @@ function playRound(nextSequence) {
     }, (index + 1) * 600);
   });
 }
-
+ /* playerTurn(tile) determines if player lost, advances to the next stage or got the sequence correct */
 function playerTurn(tile) {
   const index = playerSequence.push(tile) - 1;
   const sound = document.querySelector(`[data-sound='${tile}']`);
@@ -111,6 +118,7 @@ function playerTurn(tile) {
     info.textContent = `Taps: ${remainingTaps}`;
 }
 
+/* startGame() hides the menu and activates nextRound() */
 function startGame() {
   head.classList.add('hidden');
   startButton.classList.add('hidden');
@@ -121,6 +129,7 @@ function startGame() {
   nextRound();
 }
 
+/* when start button is pressed function startGame() activates */
 startButton.addEventListener('click', startGame);
 tileContainer.addEventListener('click', event => {
   const { tile } = event.target.dataset;
@@ -128,7 +137,7 @@ tileContainer.addEventListener('click', event => {
   if (tile) playerTurn(tile);
 });
 
-
+/* boxShadow() when a tile is pressed it adds shadow and lit effect*/
 function boxShadow() {
     this.classList.add('shadow');
     this.classList.add('lit');
@@ -145,6 +154,7 @@ for (var i = 0; i < tile.length; i++) {
     tile[i].addEventListener('click', boxShadow, false);
 }
 
+/* nextStage(text) adds extra tiles and pushes their data to const tiles */
 function nextStage(text) {
     alert(text);
     $(".nxt").removeClass("hidden");
