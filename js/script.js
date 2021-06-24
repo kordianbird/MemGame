@@ -111,7 +111,10 @@ function playerTurn(tile) {
     if (playerSequence.length === 2) {
         playerSequence = [];
         score += 10;
-      nextStage('Congrats! You completed all the levels, Time for the next stage!');
+        messageStage();
+        setTimeout(() => {
+                nextStage();
+            }, 1000);
       return;
     }
 
@@ -164,8 +167,7 @@ for (var i = 0; i < tile.length; i++) {
 }
 
 /* nextStage(text) adds extra tiles and pushes their data to const tiles */
-function nextStage(text) {
-    alert(text);
+function nextStage() {
     $(".nxt").removeClass("hidden");
 
     tileContainer.classList.add('no-margin');
