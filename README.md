@@ -16,6 +16,17 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## Design
 
+* Each tile has it's own color in order to stand out from each other
+
+* tiles were made to look more like cards to avoid looking similar to other simon games
+
+* the score, level and taps are located in the same area so that the player will not be getting distracted
+
+* the main menu let's players see their latest score before starting their next game
+
+* all tiles are located close to each other making it easier to read the sequence
+
+* the background image sets a nice atmosphere 
 
 # Features
 
