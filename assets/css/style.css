@@ -49,6 +49,12 @@ button:hover {
     border: black 2px solid;
     display: inline-block;
 }
+
+.nextStage {
+    width:  350px;
+    height: 200px;
+}
+
 .tile-container {
     margin-left: 20%;
     margin-right: 20%;

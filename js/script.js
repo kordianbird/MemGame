@@ -28,6 +28,7 @@ function resetGame(text) {
   levelSpan.classList.add('hidden');
   scoreSpan.classList.add('hidden');
   $(".nxt").addClass("hidden");
+  tileContainer.classList.remove('no-margin');
   tiles.splice(9, 7);
 }
 
@@ -162,5 +163,11 @@ function nextStage(text) {
     tileContainer.classList.add('no-margin');
 
     tiles.push('brown','moss','violet','gold','aluminium','rose','navy');
+    
+    for (var i = 0; i < tile.length; i++) {
+        tile[i].classList.add('nextStage');
+    }
+
     nextRound();
+
 }
