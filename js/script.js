@@ -8,7 +8,6 @@ let score = 0;
 const head = document.querySelector('.head');
 const startButton = document.querySelector('.startBtn');
 const info = document.querySelector('.info');
-const heading = document.querySelector('.heading');
 const tileContainer = document.querySelector('.tile-container');
 const levelSpan = document.querySelector('.level');
 const tile = document.getElementsByClassName("tile");

@@ -7,9 +7,17 @@ body {
     background-image: url(../images/new-floor.png);
 }
 
+/* FOOTER */
+
 footer {
     text-align: center;
 }
+
+.info {
+    font-size: 30px;
+}
+
+/* HEADER */
 
 .head {
     text-align: center;
@@ -37,13 +45,23 @@ button:hover {
     background-color: #E5E5E5;
 }
 
+/* SCORE/LEVEL */
+
+.score {
+    text-align: center;
+}
+
+.align {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* SECTION */
+
 .row {
     display: flex;
     justify-content: center;
-}
-
-.center {
-    display: flex;
 }
 
 .card {
@@ -56,25 +74,10 @@ button:hover {
     display: inline-block;
 }
 
-.nextStage {
-    width:  350px;
-    height: 200px;
-}
-
 .tile-container {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 5%;
-}
-
-.no-margin {
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-}
-
-.score {
-    text-align: center;
 }
 
 .bigtext {
@@ -82,6 +85,12 @@ button:hover {
     text-align: center;
 }
 
+/* script.js CSS */
+
+.shadow {
+    -webkit-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+}
 
 .lit {
     opacity: 1 !important;
@@ -91,24 +100,21 @@ button:hover {
     pointer-events: none;
 }
 
+.nextStage {
+    width:  350px;
+    height: 200px;
+}
+
 .hidden {
     display: none;
 }
 
-.info {
-    font-size: 30px;
+.no-margin {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
 }
 
-.align {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-}
-
-.shadow {
-    -webkit-box-shadow: 5px 5px 5px black;
-    box-shadow: 5px 5px 5px black;
-}
 
 /* tiles */
 
