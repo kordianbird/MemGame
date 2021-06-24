@@ -1,6 +1,8 @@
 # MemGame Project
 
-this project is a web memory game similar to the popular Simon Game. My game aims to be a fun experience that can also be challenging at times
+this project is a web memory game similar to the popular Simon Game.
+My game aims to be a fun experience that can also be challenging at times while
+still being a fun game for all ages.
 
 [wireframes](https://github.com/kordianbird/MemGame/tree/master/assets/wireframes)
 
@@ -13,6 +15,8 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 * as a player I want to be aware of my score
 
 * as a player I want to experience the game without any issues
+
+* as a player I want the game to be simple
 
 ## Design
 
@@ -47,7 +51,7 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## Next Features
 
-- [x] __restart button__ - lets the user restart the game
+- [x] __restart button__ - lets the user restart at any point in the game
 
 ## Feature Requests
 
