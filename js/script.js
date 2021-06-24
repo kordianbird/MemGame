@@ -17,6 +17,8 @@ const bigtext = document.querySelector('.bigtext');
 
 /* resetGame() resets all sequences, score, level and arrays and hides divs */ 
 function resetGame() {
+  document.querySelector('.highscore').classList.remove('hidden');
+  document.querySelector('.highscore').textContent = `Highscore: ${score}`;  
   sequence = [];
   playerSequence = [];
   level = 0;
@@ -102,7 +104,6 @@ function playerTurn(tile) {
     setTimeout(() => {
         resetGame();
     }, 2000);
-    document.querySelector('.highscore').textContent = `Highscore: ${score}`;
     return; 
   }
 
@@ -130,6 +131,7 @@ function playerTurn(tile) {
 
 /* startGame() hides the menu and activates nextRound() */
 function startGame() {
+  document.querySelector('.highscore').classList.add('hidden');
   head.classList.add('hidden');
   startButton.classList.add('hidden');
   info.classList.remove('hidden');
