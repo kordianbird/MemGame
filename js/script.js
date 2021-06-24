@@ -137,7 +137,6 @@ function startGame() {
   tileContainer.classList.remove('hidden');
   levelSpan.classList.remove('hidden');
   scoreSpan.classList.remove('hidden');
-  bigtext.classList.remove('hidden');
   nextRound();
 }
 
@@ -182,6 +181,7 @@ function nextStage() {
 }
 
 function messageLost() {
+    bigtext.classList.remove('hidden');
     tileContainer.classList.add('unclick');
     levelSpan.classList.add('hidden');
     scoreSpan.classList.add('hidden');
@@ -194,6 +194,7 @@ function messageLost() {
 }
 
 function messageStage() {
+    bigtext.classList.remove('hidden');
     tileContainer.classList.add('unclick');
     levelSpan.classList.add('hidden');
     scoreSpan.classList.add('hidden');
@@ -201,7 +202,6 @@ function messageStage() {
     $(".tile").addClass("hidden");
     bigtext.textContent = 'Good Job! Time For The Next Stage!';
     setTimeout(() => {
-        bigtext.classList.remove('hidden');
         tileContainer.classList.remove('unclick');
         levelSpan.classList.remove('hidden');
         scoreSpan.classList.remove('hidden');
