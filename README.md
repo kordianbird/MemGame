@@ -99,6 +99,8 @@ results:
 
 * JSHint: 0 errors
 
+[Tests](https://github.com/kordianbird/MemGame/blob/master/assets/tests/TestSheet.pdf)
+
 # Deployment
 
 ## Github Pages
@@ -144,7 +146,7 @@ These are steps you can use to fork the repository:
 
 * All content was written by me personally
 
-* color gradients were picked from [ColorSpace](https://mycolor.space/)
+* colors were picked from [w3schools](https://www.w3schools.com/cssref/css_colors.asp)
 
 ## Media
 
