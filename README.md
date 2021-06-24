@@ -60,8 +60,13 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 - I used css3 to style my game 
 
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- I used JavaScript to add functionality to my game
+
 
 ## Libraries
+* [jQuery](https://jquery.com/)
+- I used jQuery in some instances to ease the process of programming
 
 ## Programs
 
