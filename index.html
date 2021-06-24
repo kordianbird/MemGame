@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+
+    <!-- HEADER ELEMENT -->
     <header class="head hide">
         <h1 class="heading">MEM TILES!</h1>
         <img src="assets/images/transparentLogo.png" alt="">
@@ -17,6 +19,7 @@
     <section class="tile-container unclick hidden" >
         <h1 class="hidden bigtext"></h1>
 
+        <!-- div containing extra tiles -->
         <div class="row">
             <div class="tile tile-brown card hidden nxt" data-tile="brown"></div>
             <div class="tile tile-moss card hidden nxt" data-tile="moss"></div>
@@ -28,25 +31,26 @@
             <div class="tile tile-red card" data-tile="red"></div>
             <div class="tile tile-green card" data-tile="green"></div>
             <div class="tile tile-blue card" data-tile="blue"></div>
-            <div class="tile tile-silver card hidden nxt" data-tile="silver"></div>
+            <div class="tile tile-silver card hidden nxt" data-tile="silver"></div> <!-- extra tile-->
         </div>
 
         <div class="row">
             <div class="tile tile-yellow card" data-tile="yellow"></div>
             <div class="tile tile-pink card" data-tile="pink"></div>
             <div class="tile tile-purple card" data-tile="purple"></div>
-            <div class="tile tile-rose card hidden nxt" data-tile="rose"></div>
+            <div class="tile tile-rose card hidden nxt" data-tile="rose"></div> <!-- extra tile-->
         </div>
 
         <div class="row">
             <div class="tile tile-gray card" data-tile="grey"></div>
             <div class="tile tile-aqua card" data-tile="aqua"></div>
             <div class="tile tile-orange card" data-tile="orange"></div>
-            <div class="tile tile-navy card hidden nxt" data-tile="navy"></div>
+            <div class="tile tile-navy card hidden nxt" data-tile="navy"></div> <!-- extra tile-->
         </div> 
 
     </section>
 
+    <!-- FOOTER ELEMENT -->
     <footer class="info-section">
       <button class="startBtn">Start</button>
       <span class="info hidden"></span>
@@ -60,6 +64,7 @@
         <span class="hidden score"></span>
     </div>
 
+    <!-- Divs containing audio -->
     <div>
         <audio src="assets/sound/zapsplat_multimedia_game_sound_brick_set_down_001_67447.mp3" data-sound="red"></audio>
     </div>
@@ -109,6 +114,7 @@
         <audio src="assets/sound/zapsplat_multimedia_game_sound_brick_set_down_001_67447.mp3" data-sound="navy"></audio>
     </div>
 
+    <!-- SCRIPT -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
