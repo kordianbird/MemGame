@@ -60,7 +60,7 @@ function nextRound() {
   sequence = [...nextSequence];
   setTimeout(() => {
     humanTurn(level);
-  }, level * 600 + 1000);
+  }, level * 500 + 1000);
 }
 
 /* humanTurn(level) let's player tap the tiles */
@@ -79,14 +79,14 @@ function activateTile(color) {
 
   setTimeout(() => {
     tile.classList.remove('lit');
-  }, 300);
+  }, 400);
 }
  /* playRound(nextSequence) plays the next sequence */
 function playRound(nextSequence) {
   nextSequence.forEach((color, index) => {
     setTimeout(() => {
       activateTile(color);
-    }, (index + 1) * 600);
+    }, (index + 1) * 500);
   });
 }
  /* playerTurn(tile) determines if player lost, advances to the next stage or got the sequence correct */
@@ -102,8 +102,7 @@ function playerTurn(tile) {
     setTimeout(() => {
         resetGame();
     }, 2000);
-    return;
-    
+    return; 
   }
 
   if (playerSequence.length === sequence.length) {
@@ -122,7 +121,7 @@ function playerTurn(tile) {
     score += 10;
     setTimeout(() => {
       nextRound();
-    }, 1000);
+    }, 800);
     return;
   } 
     info.textContent = `Taps: ${remainingTaps}`;
@@ -154,10 +153,10 @@ function boxShadow() {
 
     setTimeout(() => {
         this.classList.remove('shadow');
-    }, 300);
+    }, 200);
     setTimeout(() => {
         this.classList.remove('lit');
-    }, 300);
+    }, 200);
 }
 
 for (var i = 0; i < tile.length; i++) {
