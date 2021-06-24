@@ -75,6 +75,7 @@ button:hover {
   .card {
     width:350px;
     height:200px;
+    margin: 15px 15px 15px 15px;
   }
 }
 
@@ -91,6 +92,9 @@ button:hover {
     }
     .head img {
         width: 400px;
+    }
+    .align {
+        margin-top: 5px !important;
     }
 }
 
