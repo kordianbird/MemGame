@@ -32,7 +32,7 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## Existing Features
 
-* __Main-Menu__ - let's the user to see their highscore and start the game
+* __Main-Menu__ - let's the user to see their latest score and start the game
 
 * __Sequence__ - creates a random sequence for the game so that it doesn't get repetitive
 
@@ -42,10 +42,13 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 * __colored-tiles__ - tiles will flash in a bright color to indicate the sequence
 
+* __next-stage__ - extra tiles are added to make the game more challenging
+
 
 ## Next Features
 
-- [] __restart button__ - lets the user restart the game
+- [x] __restart button__ - lets the user restart the game
+
 
 # Technologies Used
 
