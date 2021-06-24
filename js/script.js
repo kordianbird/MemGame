@@ -16,7 +16,7 @@ const scoreSpan = document.querySelector('.score');
 const bigtext = document.querySelector('.bigtext');
 
 
-/* resetGame() resets all sequences, score, level and arrays and hides divs*/ 
+/* resetGame() resets all sequences, score, level and arrays and hides divs */ 
 function resetGame() {
   sequence = [];
   playerSequence = [];
@@ -148,7 +148,7 @@ tileContainer.addEventListener('click', event => {
   if (tile) playerTurn(tile);
 });
 
-/* boxShadow() when a tile is pressed it adds shadow and lit effect*/
+/* boxShadow() when a tile is pressed it adds shadow and lit effect */
 function boxShadow() {
     this.classList.add('shadow');
     this.classList.add('lit');
