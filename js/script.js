@@ -180,14 +180,25 @@ function nextStage(text) {
 }
 
 function messageLost() {
-  tileContainer.classList.add('unclick');
-  levelSpan.classList.add('hidden');
-  scoreSpan.classList.add('hidden');
-  info.classList.add('hidden');
-  $(".tile").addClass("hidden");
+    tileContainer.classList.add('unclick');
+    levelSpan.classList.add('hidden');
+    scoreSpan.classList.add('hidden');
+    info.classList.add('hidden');
+    $(".tile").addClass("hidden");
     bigtext.textContent = 'Oops! You Lost!';
     setTimeout(() => {
         bigtext.classList.add('hidden');
     }, 1000);
 }
 
+function messageStage() {
+    tileContainer.classList.add('unclick');
+    levelSpan.classList.add('hidden');
+    scoreSpan.classList.add('hidden');
+    info.classList.add('hidden');
+    $(".tile").addClass("hidden");
+    bigtext.textContent = 'Good Job! Time For The Next Stage!';
+    setTimeout(() => {
+        bigtext.classList.add('hidden');
+    }, 1000);
+}
