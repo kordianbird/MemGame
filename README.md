@@ -51,9 +51,9 @@ still being a fun game for all ages.
 
 ## Next Features
 
-- [] __restart button__ - lets the user restart at any point in the game
+- [ ] __restart button__ - lets the user restart at any point in the game
 
-- [] __cache score__ - caches player's highscore 
+- [ ] __cache score__ - caches player's highscore 
 
 
 # Technologies Used
