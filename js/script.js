@@ -13,11 +13,11 @@ const tileContainer = document.querySelector('.tile-container');
 const levelSpan = document.querySelector('.level');
 const tile = document.getElementsByClassName("tile");
 const scoreSpan = document.querySelector('.score');
+const bigtext = document.querySelector('.bigtext');
 
 
-/* resetGame(text) resets all sequences, score, level and arrays and hides divs*/ 
-function resetGame(text) {
-  alert(text);
+/* resetGame() resets all sequences, score, level and arrays and hides divs*/ 
+function resetGame() {
   sequence = [];
   playerSequence = [];
   level = 0;
@@ -98,8 +98,12 @@ function playerTurn(tile) {
   const remainingTaps = sequence.length - playerSequence.length;
 
   if (playerSequence[index] !== sequence[index]) {
-    resetGame('Game Over!');
+    message();
+    setTimeout(() => {
+        resetGame();
+    }, 1000);
     return;
+    
   }
 
   if (playerSequence.length === sequence.length) {
@@ -129,6 +133,7 @@ function startGame() {
   tileContainer.classList.remove('hidden');
   levelSpan.classList.remove('hidden');
   scoreSpan.classList.remove('hidden');
+  bigtext.classList.remove('hidden');
   nextRound();
 }
 
@@ -171,5 +176,11 @@ function nextStage(text) {
     }
 
     nextRound();
+}
 
+function message() {
+    bigtext.textContent = 'Oops! You Lost!';
+    setTimeout(() => {
+        bigtext.classList.add('hidden');
+    }, 1000);
 }
