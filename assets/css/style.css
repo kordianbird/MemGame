@@ -19,6 +19,15 @@ footer {
 
 /* HEADER */
 
+.heading {
+    margin-bottom: 0;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 25px;
+}
+
 .head {
     text-align: center;
     font-size: 40px;
@@ -54,7 +63,7 @@ button:hover {
 .align {
     text-align: center;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* SECTION */
@@ -302,6 +311,12 @@ button:hover {
     }
     .head {
         margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header p {
+        font-size: 15px;
     }
 }
 
