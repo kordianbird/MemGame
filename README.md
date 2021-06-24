@@ -69,7 +69,14 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 - I used jQuery in some instances to ease the process of programming
 
 ## Programs
+* [Git](https://git-scm.com/)
+-I used gitpod's terminal to commit my code and then to push it to GitHub
 
+* [GitHub](https://github.com/)
+-I used GitHub to store my project code
+
+*[Mockplus](https://www.mockplus.com/)
+- I used Mockplus to create my wireframes
 
 
 # Testing
