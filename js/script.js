@@ -102,6 +102,7 @@ function playerTurn(tile) {
     setTimeout(() => {
         resetGame();
     }, 2000);
+    document.querySelector('.highscore').textContent = `Highscore: ${score}`;
     return; 
   }
 

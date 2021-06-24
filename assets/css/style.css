@@ -17,6 +17,10 @@ footer {
     font-size: 30px;
 }
 
+.highscore {
+    font-size: 40px !important;
+}
+
 /* HEADER */
 
 .heading {
