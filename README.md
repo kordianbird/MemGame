@@ -83,8 +83,21 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 
 # Testing
+I used :
 
+* [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my html code
 
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) to validate my css code
+
+* [JSHint](https://jshint.com/) to validate my JavaScript code
+
+results:
+
+* W3C Markup Validator: 0 errors
+
+* W3C CSS Validator: 0 errors
+
+* JSHint: 0 errors
 
 # Deployment
 
