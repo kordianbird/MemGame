@@ -180,6 +180,7 @@ function nextStage() {
     nextRound();
 }
 
+/* messageLost() hides elements and displays message notifying player that they have lost */
 function messageLost() {
     bigtext.classList.remove('hidden');
     tileContainer.classList.add('unclick');
@@ -193,6 +194,7 @@ function messageLost() {
     }, 2000);
 }
 
+/* messageLost() hides elements and displays message notifying player that they have advanced to the next stage */
 function messageStage() {
     bigtext.classList.remove('hidden');
     tileContainer.classList.add('unclick');
