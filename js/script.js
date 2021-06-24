@@ -201,6 +201,12 @@ function messageStage() {
     $(".tile").addClass("hidden");
     bigtext.textContent = 'Good Job! Time For The Next Stage!';
     setTimeout(() => {
+        bigtext.classList.remove('hidden');
+        tileContainer.classList.remove('unclick');
+        levelSpan.classList.remove('hidden');
+        scoreSpan.classList.remove('hidden');
+        info.classList.remove('hidden');
+        $(".tile").removeClass("hidden");
         bigtext.classList.add('hidden');
     }, 1000);
 }
