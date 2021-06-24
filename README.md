@@ -49,6 +49,9 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 - [x] __restart button__ - lets the user restart the game
 
+## Feature Requests
+
+
 
 # Technologies Used
 
