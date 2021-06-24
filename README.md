@@ -58,28 +58,28 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 ## Languages
 
 * [HTML5](https://en.wikipedia.org/wiki/HTML)
-- I used html (HyperText Markup Language) as the base for my project
+ I used html (HyperText Markup Language) as the base for my project
 
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
-- I used css3 to style my game 
+ I used css3 to style my game 
 
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- I used JavaScript to add functionality to my game
+ I used JavaScript to add functionality to my game
 
 
 ## Libraries
 * [jQuery](https://jquery.com/)
-- I used jQuery in some instances to ease the process of programming
+ I used jQuery in some instances to ease the process of programming
 
 ## Programs
 * [Git](https://git-scm.com/)
--I used gitpod's terminal to commit my code and then to push it to GitHub
+ I used gitpod's terminal to commit my code and then to push it to GitHub
 
 * [GitHub](https://github.com/)
--I used GitHub to store my project code
+ I used GitHub to store my project code
 
 *[Mockplus](https://www.mockplus.com/)
-- I used Mockplus to create my wireframes
+ I used Mockplus to create my wireframes
 
 
 # Testing
