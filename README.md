@@ -122,7 +122,13 @@ These are steps you can use to fork the repository:
 
 ## Code
 
+* I drew inspiration from this [SimonGame](https://freshman.tech/simon-game/#start-the-next-round)
+
 ## Content
+
+* All content was written by me personally
+
+* color gradients were picked from [ColorSpace](https://mycolor.space/)
 
 ## Media
 
