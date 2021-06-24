@@ -102,7 +102,7 @@ function playerTurn(tile) {
     messageLost();
     setTimeout(() => {
         resetGame();
-    }, 1000);
+    }, 2000);
     return;
     
   }
@@ -114,7 +114,7 @@ function playerTurn(tile) {
         messageStage();
         setTimeout(() => {
                 nextStage();
-            }, 1000);
+            }, 2000);
       return;
     }
 
@@ -190,7 +190,7 @@ function messageLost() {
     bigtext.textContent = 'Oops! You Lost!';
     setTimeout(() => {
         bigtext.classList.add('hidden');
-    }, 1000);
+    }, 2000);
 }
 
 function messageStage() {
@@ -208,5 +208,5 @@ function messageStage() {
         info.classList.remove('hidden');
         $(".tile").removeClass("hidden");
         bigtext.classList.add('hidden');
-    }, 1000);
+    }, 2000);
 }
