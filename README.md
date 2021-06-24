@@ -8,6 +8,12 @@ this project is a web memory game similar to the popular Simon Game. My game aim
 
 ## User Stories
 
+* as a player I want to be able to play the game on any device
+
+* as a player I want to be aware of my score
+
+* as a player I want to experience the game without any issues
+
 ## Design
 
 
