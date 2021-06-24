@@ -154,6 +154,13 @@ button:hover {
         height: 60px;
         margin: 3px 3px 3px 3px;
     }
+    .info {
+        font-size: 20px !important;
+    }
+    .align {
+        font-size: 20px !important;
+        margin-top: 5px !important;
+    }
 }
 
 @media screen and (min-height: 1024px) and (max-height:1025px) {
