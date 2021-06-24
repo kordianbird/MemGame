@@ -1,3 +1,5 @@
+/* before the game starts, the sequence, level and score are empty */
+
 let sequence = [];
 let playerSequence = [];
 let level = 0;
