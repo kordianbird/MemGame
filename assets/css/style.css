@@ -71,6 +71,11 @@ button:hover {
     text-align: center;
 }
 
+.bigtext {
+    font-size: 50px;
+    text-align: center;
+}
+
 @media screen and (max-width: 2315px) and (min-width: 1367px) {
   .card {
     width:350px;

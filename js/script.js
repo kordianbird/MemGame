@@ -29,6 +29,7 @@ function resetGame() {
   tileContainer.classList.add('hidden');
   levelSpan.classList.add('hidden');
   scoreSpan.classList.add('hidden');
+  $(".tile").removeClass("hidden");
   $(".nxt").addClass("hidden");
   tileContainer.classList.remove('no-margin');
   tiles.splice(9, 7);
@@ -98,7 +99,7 @@ function playerTurn(tile) {
   const remainingTaps = sequence.length - playerSequence.length;
 
   if (playerSequence[index] !== sequence[index]) {
-    message();
+    messageLost();
     setTimeout(() => {
         resetGame();
     }, 1000);
@@ -178,9 +179,15 @@ function nextStage(text) {
     nextRound();
 }
 
-function message() {
+function messageLost() {
+  tileContainer.classList.add('unclick');
+  levelSpan.classList.add('hidden');
+  scoreSpan.classList.add('hidden');
+  info.classList.add('hidden');
+  $(".tile").addClass("hidden");
     bigtext.textContent = 'Oops! You Lost!';
     setTimeout(() => {
         bigtext.classList.add('hidden');
     }, 1000);
 }
+
