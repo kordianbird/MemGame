@@ -4,6 +4,8 @@ this project is a web memory game similar to the popular Simon Game.
 My game aims to be a fun experience that can also be challenging at times while
 still being a fun game for all ages.
 
+After completing 5 levels the grid expands with more tiles to add difficulty in order to make the game more fun.
+
 [wireframes](https://github.com/kordianbird/MemGame/tree/master/assets/wireframes)
 
 # UX

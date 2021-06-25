@@ -108,7 +108,7 @@ function playerTurn(tile) {
   }
 
   if (playerSequence.length === sequence.length) {
-    if (playerSequence.length === 2) {
+    if (playerSequence.length === 5) {
         playerSequence = [];
         score += 10;
         messageStage();
