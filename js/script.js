@@ -103,7 +103,7 @@ function playerTurn(tile) {
     messageLost();
     setTimeout(() => {
         resetGame();
-    }, 2000);
+    }, 1000);
     return; 
   }
 
@@ -114,7 +114,7 @@ function playerTurn(tile) {
         messageStage();
         setTimeout(() => {
                 nextStage();
-            }, 2000);
+            }, 1000);
       return;
     }
 
@@ -123,7 +123,7 @@ function playerTurn(tile) {
     score += 10;
     setTimeout(() => {
       nextRound();
-    }, 800);
+    }, 100);
     return;
   } 
     info.textContent = `Taps: ${remainingTaps}`;
@@ -192,7 +192,7 @@ function messageLost() {
     bigtext.textContent = 'Oops! You Lost!';
     setTimeout(() => {
         bigtext.classList.add('hidden');
-    }, 2000);
+    }, 1000);
 }
 
 /* messageLost() hides elements and displays message notifying player that they have advanced to the next stage */
@@ -211,5 +211,5 @@ function messageStage() {
         info.classList.remove('hidden');
         $(".tile").removeClass("hidden");
         bigtext.classList.add('hidden');
-    }, 2000);
+    }, 1000);
 }
