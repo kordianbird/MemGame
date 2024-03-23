@@ -81,7 +81,7 @@ function activateTile(color) {
 
   setTimeout(() => {
     tile.classList.remove('lit');
-  }, 400);
+  }, 100);
 }
  /* playRound(nextSequence) plays the next sequence */
 function playRound(nextSequence) {
